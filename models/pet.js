@@ -54,9 +54,8 @@ module.exports.addPet = (pet, callback) => {
 module.exports.updatePet = (id, pet, options, callback) => {
 	var query = {_id: id};
 	var update = {
-		name: user.name,
-		email: user.email,
-		password: user.password
+		name: pet.name,
+		birth: pet.birth
 	}
 	Pet.findOneAndUpdate(query, update, options, callback);
 }
