@@ -27,6 +27,9 @@ const petSchema = mongoose.Schema({
 	isCastrado:{
 		type: Boolean
 	},
+	created_by:{
+		type: Object
+	},
 	create_date:{
 		type: Date,
 		default: Date.now
